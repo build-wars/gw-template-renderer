@@ -1,10 +1,10 @@
 {
 	"$schema": "https://getcomposer.org/schema.json",
-	"name": "chillerlan/php-library-template-nodocs",
-	"description": "A PHP Library template/boilerplate.",
+	"name": "build-wars/gw-template-renderer",
+	"description": "A renderer for Guild Wars skill descriptions.",
 	"license": "MIT",
 	"type": "library",
-	"keywords": ["boilerplate", "library-template"],
+	"keywords": ["guild wars"],
 	"authors": [
 		{
 			"name": "smiley",
@@ -13,7 +13,7 @@
 		},
 		{
 			"name": "Contributors",
-			"homepage":"https://github.com/chillerlan/php-library-template-nodocs/graphs/contributors"
+			"homepage":"https://github.com/build-wars/gw-template-renderer/graphs/contributors"
 		}
 	],
 	"funding": [
@@ -22,42 +22,41 @@
 			"url": "https://ko-fi.com/codemasher"
 		}
 	],
-	"homepage": "https://github.com/chillerlan/php-library-template-nodocs",
+	"homepage": "https://github.com/build-wars/gw-template-renderer",
 	"support": {
-		"issues": "https://github.com/chillerlan/php-library-template-nodocs/issues",
-		"source": "https://github.com/chillerlan/php-library-template-nodocs"
+		"issues": "https://github.com/build-wars/gw-template-renderer/issues",
+		"source": "https://github.com/build-wars/gw-template-renderer"
 	},
 	"minimum-stability": "stable",
 	"prefer-stable": true,
 	"require": {
-		"php": "^8.4"
+		"php": "^8.1",
+		"ext-sodium": "*",
+		"buildwars/gw-skilldata": "^1.1",
+		"buildwars/gw-templates": "^1.0"
 	},
 	"require-dev": {
-		"phan/phan": "^6.0",
+		"phan/phan": "^6.0.5",
 		"phpmd/phpmd": "^2.15",
-		"phpstan/phpstan": "^2.1.44",
-		"phpstan/phpstan-deprecation-rules": "^2.0.4",
-		"phpunit/phpunit": "^13.0",
-		"slevomat/coding-standard": "^8.28.1",
+		"phpunit/phpunit": "^11.5",
+		"slevomat/coding-standard": "^8.29",
 		"squizlabs/php_codesniffer": "^4.0"
 	},
 	"suggest": {
 	},
 	"autoload": {
 		"psr-4": {
-			"chillerlan\\LibraryTemplate\\": "src"
+			"Buildwars\\GWTemplateRenderer\\": "src"
 		}
 	},
 	"autoload-dev": {
 		"psr-4": {
-			"chillerlan\\LibraryTemplateTest\\": "tests"
+			"Buildwars\\GWTemplateRendererTest\\": "tests"
 		}
 	},
 	"scripts": {
 		"phan": "@php vendor/bin/phan",
 		"phpcs": "@php vendor/bin/phpcs -v",
-		"phpstan": "@php vendor/bin/phpstan",
-		"phpstan-baseline": "@php vendor/bin/phpstan --generate-baseline",
 		"phpunit": "@php vendor/bin/phpunit"
 	},
 	"config": {

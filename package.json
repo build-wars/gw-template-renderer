@@ -1,0 +1,75 @@
+{
+	"name": "@buildwars/gw-template-renderer",
+	"version": "1.0.0",
+	"description": "A renderer for Guild Wars skill descriptions.",
+	"license": "MIT",
+	"homepage": "https://github.com/build-wars/gw-template-renderer",
+	"keywords": [
+		"guild wars"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/build-wars/gw-template-renderer.git"
+	},
+	"authors": [
+		{
+			"name": "smiley",
+			"email": "smiley@chillerlan.net",
+			"homepage": "https://github.com/codemasher"
+		}
+	],
+	"contributors": [
+		{
+			"name": "Contributors",
+			"homepage": "https://github.com/build-wars/gw-template-renderer/graphs/contributors"
+		}
+	],
+	"bugs": {
+		"url": "https://github.com/build-wars/gw-template-renderer/issues"
+	},
+	"funding": [
+		{
+			"type": "ko-fi",
+			"url": "https://ko-fi.com/codemasher"
+		}
+	],
+	"type": "module",
+	"main": "lib/main.cjs",
+	"browser": "./lib/browser.js",
+	"files": [
+		"dist/*",
+		"es6/*",
+		"lib/*",
+		"LICENSE",
+		"README.md"
+	],
+	"dependencies": {
+		"@buildwars/gw-skilldata": "^1.1",
+		"@buildwars/gw-templates": "^1.0"
+	},
+	"devDependencies": {
+		"@babel/eslint-parser": "~7.29.7",
+		"@babel/plugin-syntax-import-attributes": "~7.29.7",
+		"@babel/preset-env": "~7.29.7",
+		"@rollup/plugin-babel": "~7.1.0",
+		"@rollup/plugin-json": "~6.1.0",
+		"@rollup/plugin-terser": "~1.0.0",
+		"c8": "~11.0.0",
+		"chai": "~6.2.2",
+		"core-js": "~3.49.0",
+		"eslint": "~9.39.4",
+		"mocha": "~11.7.6",
+		"node": "~25.9.0",
+		"nyc": "~18.0.0",
+		"rollup": "~4.61.1",
+		"util": "~0.12.5"
+	},
+	"scripts": {
+		"lint": "eslint ./es6 ./tests",
+		"build": "rollup -c rollup.config.dist.js",
+		"build-src": "rollup -c rollup.config.src.js",
+		"test": "mocha",
+		"test-with-coverage": "c8 mocha",
+		"prepublishOnly": "npm run lint && npm run test && rollup -c rollup.config.prepublish.js"
+	}
+}
