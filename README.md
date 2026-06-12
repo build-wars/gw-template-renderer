@@ -9,10 +9,10 @@ A renderer for [Guild Wars](https://www.guildwars.com) skill descriptions.
 [![CodeCov][coverage-badge]][coverage]
 [![Packagist downloads][downloads-badge]][downloads]
 
-[php-badge]: https://img.shields.io/packagist/php-v/build-wars/gw-template-renderer?logo=php&color=8892BF&logoColor=fff
+[php-badge]: https://img.shields.io/packagist/php-v/buildwars/gw-template-renderer?logo=php&color=8892BF&logoColor=fff
 [php]: https://www.php.net/supported-versions.php
-[packagist-badge]: https://img.shields.io/packagist/v/build-wars/gw-template-renderer.svg?logo=packagist&logoColor=fff
-[packagist]: https://packagist.org/packages/build-wars/gw-template-renderer
+[packagist-badge]: https://img.shields.io/packagist/v/buildwars/gw-template-renderer.svg?logo=packagist&logoColor=fff
+[packagist]: https://packagist.org/packages/buildwars/gw-template-renderer
 [license-badge]: https://img.shields.io/github/license/build-wars/gw-template-renderer
 [license]: https://github.com/build-wars/gw-template-renderer/blob/main/LICENSE
 [gh-action-badge]: https://img.shields.io/github/actions/workflow/status/build-wars/gw-template-renderer/ci.yml?branch=main&logo=github&logoColor=fff
