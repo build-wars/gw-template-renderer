@@ -1,6 +1,6 @@
 {
 	"$schema": "https://getcomposer.org/schema.json",
-	"name": "build-wars/gw-template-renderer",
+	"name": "buildwars/gw-template-renderer",
 	"description": "A renderer for Guild Wars skill descriptions.",
 	"license": "MIT",
 	"type": "library",
